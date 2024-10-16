@@ -18,9 +18,9 @@ let start, end
 
 // end = new Date()
 
-start = new Date()
-for (let i = 1; i < 5; i++) {
-  console.log(i)
-}
-end = new Date()
-console.log(end.getTime() - start.getTime())
+// start = new Date()
+// for (let i = 1; i < 5; i++) {
+//   console.log(i)
+// }
+// end = new Date()
+// console.log(end.getTime() - start.getTime())
