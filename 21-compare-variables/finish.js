@@ -7,11 +7,10 @@
  */
 
 let myVariable1 = 10
-let myVariable2 = '5'
+let myVariable2 = '20'
 
-// Напишите код здесь
-
-myVariable1 = '20'
+console.log(myVariable1 <= myVariable2)
+myVariable1 = '5'
 myVariable2 = 100
 
-// Напишите код здесь
+console.log(myVariable1 <= myVariable2)
