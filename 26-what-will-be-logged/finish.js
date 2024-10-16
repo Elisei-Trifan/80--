@@ -9,7 +9,10 @@ function fn() {
 
   return function (a) {
     console.log(a)
+    return function (b, c) {
+      console.log(b + c)
+    }
   }
 }
 
-fn()(true)
+fn()(5)(10, 5)
