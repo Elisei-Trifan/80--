@@ -15,3 +15,11 @@ const postsJSON = [
   '{"postId":6134,"commentsQuantity":2}',
   '{"postId":2351,"commentsQuantity":8}',
 ]
+let array = []
+postsJSON.map((item) => {
+  return array.push(JSON.parse(item))
+})
+
+console.log(array)
+console.log(array[1].postId)
+console.log(array[array.length - 1].commentsQuantity)
