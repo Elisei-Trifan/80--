@@ -16,8 +16,8 @@ let i = 1
 const a = setInterval(() => {
   console.log('Сообщение ' + i)
   i += 1
-}, 2000)
+}, 1000)
 
 setTimeout(() => {
   clearInterval(a)
-}, 10500)
+}, 5500)
