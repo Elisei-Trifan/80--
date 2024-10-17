@@ -18,3 +18,25 @@ const MIN = 1000
 const MAX = 9999
 
 const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+
+function generate(min, max) {
+  return Math.floor(min + Math.random() * (max + 1 - min))
+}
+// console.log(generate(MIN, MAX))
+
+function createNewArray(arr, min, max) {
+  let newRandomNumber
+  const updatedArr = [...arr]
+  do {
+    newRandomNumber = generate(min, max)
+  } while (updatedArr.includes(newRandomNumber))
+
+  updatedArr.push(newRandomNumber)
+
+  return updatedArr
+}
+
+const updatedArray = createNewArray(myNumbers, MIN, MAX)
+
+console.log('Старый массив ', myNumbers)
+console.log('Новый массив ', updatedArray)
