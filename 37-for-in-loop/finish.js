@@ -14,5 +14,13 @@ const myObject = {
 Object.prototype.country = 'England'
 
 for (let key in myObject) {
-  console.log(myObject[key])
+  if (myObject.hasOwnProperty(key)) {
+    console.log(myObject[key])
+  }
+}
+
+const array = [1, 2, 3, 4, 5, 6]
+
+for (let item of array) {
+  console.log(item)
 }

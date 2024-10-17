@@ -24,4 +24,4 @@ c.forEach((item) => {
   }
 })
 
-console.log(myObject['key1'])
+console.log(myObject['key10'])
