@@ -41,3 +41,7 @@ console.log(isElementInArray({ title: 'Apple', quantity: 25 }, fruits)) // true
 console.log(isElementInArray({ title: 'Banana' }, fruits)) // false
 
 console.log(isElementInArray(25, primitiveTypesArray)) // true
+
+const numb = [1, 2, , 6, 7, 8, 9, 10, 15, 13]
+
+console.log(numb.every((item) => item < 20))
