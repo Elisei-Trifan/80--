@@ -24,6 +24,12 @@ const inputPosts = [
   },
 ]
 
+function popularPostsIds(posts, minimalComentsQty) {
+  return posts.reduce((acc, item, index, arr) => {
+    return item.comments >= minimalComentsQty ? acc.concat(item.postId) : acc
+  }, [])
+}
+
 console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
 
 console.log(popularPostsIds(inputPosts, 15)) // [3421]
