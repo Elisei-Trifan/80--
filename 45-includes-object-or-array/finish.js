@@ -45,3 +45,7 @@ console.log(isElementInArray(25, primitiveTypesArray)) // true
 const numb = [1, 2, , 6, 7, 8, 9, 10, 15, 13]
 
 console.log(numb.every((item) => item < 20))
+
+const diff = [1, 2, 'dggdb', 'gdh', 7, 8, 9, 10, 15, 13]
+
+console.log(diff.some((item) => typeof item === 'string'))
