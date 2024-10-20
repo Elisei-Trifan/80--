@@ -8,6 +8,11 @@
 
 const inputPosts = [
   {
+    title: 'Как быстро выучить JavaScript?',
+    postId: 3421,
+    comments: 25,
+  },
+  {
     title: 'Где используется JavaScript?',
     postId: 5216,
     comments: 3,
