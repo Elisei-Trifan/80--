@@ -9,6 +9,10 @@
  * 3. Оригинальный массив должен остаться без изменений
  */
 
+function sortProductsByPrice(products) {
+  return products.toSorted()
+}
+
 const inputProducts = [
   {
     title: 'Phone case',
@@ -41,3 +45,12 @@ const inputProducts = [
 // console.log(sortedProducts) // Массив отсортированных товаров
 
 // console.log(inputProducts) // Оригинальный массив не должен измениться
+
+const a = [1, 16, 2, 25, 4, 8]
+
+const b = a.toSorted((a, b) => {
+  return a - b
+})
+
+console.log(b)
+console.log(a)
