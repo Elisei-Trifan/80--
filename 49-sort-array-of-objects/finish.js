@@ -10,7 +10,7 @@
  */
 
 function sortProductsByPrice(products) {
-  return products.toSorted()
+  return products.toSorted((a, b) => a.price - b.price)
 }
 
 const inputProducts = [
@@ -40,17 +40,17 @@ const inputProducts = [
   },
 ]
 
-// const sortedProducts = sortProductsByPrice(inputProducts)
+const sortedProducts = sortProductsByPrice(inputProducts)
 
-// console.log(sortedProducts) // Массив отсортированных товаров
+console.log(sortedProducts) // Массив отсортированных товаров
 
-// console.log(inputProducts) // Оригинальный массив не должен измениться
+console.log(inputProducts) // Оригинальный массив не должен измениться
 
-const a = [1, 16, 2, 25, 4, 8]
+// const a = [1, 16, 2, 25, 4, 8]
 
-const b = a.toSorted((a, b) => {
-  return a - b
-})
+// const b = a.toSorted((a, b) => {
+//   return a - b
+// })
 
-console.log(b)
-console.log(a)
+// console.log(b)
+// console.log(a)
