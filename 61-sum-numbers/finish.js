@@ -8,11 +8,20 @@
  * 3. Также верните эту сумму как результат функции
  */
 
-function sumNumbers(...spread) {
+function sumNumbers2(...spread) {
   console.log(
     'Sum of all arguments is ',
     spread.reduce((acc, item) => acc + item, 0)
   )
+}
+
+function sumNumbers() {
+  let sum = 0
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i]
+  }
+  //   return sum
+  console.log(sum)
 }
 
 sumNumbers(1, 3)
