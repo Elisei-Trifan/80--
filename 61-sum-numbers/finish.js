@@ -8,6 +8,13 @@
  * 3. Также верните эту сумму как результат функции
  */
 
+function sumNumbers(...spread) {
+  console.log(
+    'Sum of all arguments is ',
+    spread.reduce((acc, item) => acc + item, 0)
+  )
+}
+
 sumNumbers(1, 3)
 // 4
 
