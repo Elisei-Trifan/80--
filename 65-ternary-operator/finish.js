@@ -11,9 +11,12 @@ function isNumber2(a) {
   }
 }
 
-function isNumber(a) {
+function isNumber3(a) {
   return typeof a === 'number' ? `${a} - это число` : `${a} - это не число`
 }
+
+const isNumber = (a) =>
+  typeof a === 'number' ? `${a} - это число` : `${a} - это не число`
 
 console.log(isNumber(10))
 // 10 - это число
