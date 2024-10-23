@@ -11,5 +11,18 @@ const str = 'Today is the best day of my life'
 
 // Напишите код здесь
 
+function fn([...string], vw) {
+  return string.forEach((item) => {
+    vw.includes(item) ? vowelsCount++ : false
+  })
+}
+fn(str, vowels)
+
+// str.split('').forEach((item) => {
+//   if (vowels.includes(item)) {
+//     vowelsCount++
+//   }
+// })
+
 console.log(vowelsCount)
 // 9
