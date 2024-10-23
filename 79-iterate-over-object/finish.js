@@ -18,6 +18,12 @@ const objectWithNumbers = {
 
 // Создайте функцию здесь
 
+function sumObjectValues(obj) {
+  return Object.values(obj)
+    .filter((item) => typeof item === 'number')
+    .reduce((acc, item) => acc + item, 0)
+}
+
 const result = sumObjectValues(objectWithNumbers)
 console.log(result)
 //42
